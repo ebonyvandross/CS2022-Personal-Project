@@ -9,6 +9,7 @@ COLORS:
 
 /* DON'T CHANGE THIS */
 body {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
      max-width: 100vw;
      margin: 0%;
@@ -58,7 +59,7 @@ li {
 
 }
 
-.home-content {
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,6 +74,7 @@ h1 {
     text-align: center;
     /* padding-top: 30px; */
     padding-bottom: 30px;
+    
 }
 
 h2 {
@@ -94,17 +96,56 @@ h2 {
     outline: #170312 solid 5px;
     border-radius: 10%;
     box-shadow: 10px 10px 5px #228CDB;
+}
+
+.content-box-2 {
+    /* background-color: #170312; */
+    height: 600px;
+    width: 80%;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #170312;
+    outline: #170312 solid 5px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #228CDB;
   }
 
 
 /* inside content-box class */
-  .home-image {
+.home-image {
     width: 100px;
     height: 100px;
     padding: 30px;
 }
 /* inside content-box class */
 
+.content-box-2-image {
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+}
+
+/* TABLES */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+/* tr:nth-child(even) {
+    background-color: #F4E04D;
+} */
+/* TABLES */
 
 .footer-div {
     display: flex;
