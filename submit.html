@@ -17,11 +17,6 @@
 
 <body>
     <div class="top-div">
-        <div class="header-logo-div">
-            <a href="/index.html">
-                <img class="header-logo" src="/images/FCFCFC - Lotion logo 2.png" alt="Let's Start Learning Logo">
-            </a>
-        </div>
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
@@ -31,37 +26,30 @@
     </div>
 
     <div class="banner-div">
-        ***PLACE HOLDER FOR BANNER/UPDATES***
+        ***BANNER/UPDATES***
     </div>
 
-    <div class="site-title-div">
-        <h1 class="site-title">Let's Start Learning</h1>
-    </div>
+    <div class="contact-div">
 
-    <div class="main-content">
-        <div class="content-box">
-            <a href="/howtouse.html">
-                HOW TO USE THIS WEBSITE
-                <img src="/images/how.png" class=home-image alt="How to use this website">
-                </i>
-        </div>
-        <div class="content-box">
-            <a href="/blog.html">
-                NEWS/BLOG
-                <img src="/images/blog.png" class=home-image alt="news/blog">
-                </i>
-        </div>
-        <div class="content-box">
-            <a href="/start-learning.html">
-                FOR LEARNERS
-                <img src="/images/learners.png" class=home-image alt="for learners">
-                </i>
-        </div>
-        <div class="content-box">
-            <a href="/for-instructors.html">
-                FOR INSTRUCTORS
-                <img src="/images/instructors.png" class=home-image alt="for instructors">
-                </i>
+        <div class="contact-container">
+            <h1>Submit an activity</h1>
+            <form action="action_page.php">
+
+                <label for="fname">YOUR FIRST NAME</label>
+                <input type="text" id="fname" name="firstname" placeholder="Type here.">
+
+                <label for="lname">YOUR LAST NAME</label>
+                <input type="text" id="lname" name="lastname" placeholder="Type here.">
+
+                <label for="email">YOUR EMAIL ADDRESS</label>
+                <input type="text" id="email" name="email" placeholder="Type here.">
+
+                <label for="message">YOUR MESSAGE/QUESTION</label>
+                <textarea id="message" name="message" placeholder="Type here." style="height:200px"></textarea>
+
+                <input type="submit" class="form-button" value="Submit">
+
+            </form>
         </div>
     </div>
 

@@ -11,33 +11,66 @@ COLORS:
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
-     max-width: 100vw;
-     margin: 0%;
-     overflow-x: hidden;
+    max-width: 100vw;
+    margin: 0%;
+    overflow-x: hidden;
 }
+
 /* DON'T CHANGE THIS */
 
 
-
 .top-div {
-    display: flex;
-    background-color: #228CDB;
-    height: 100px;
+    /* display: flex; */
+    /* background-color: #170312; */
+    background-color: black;
+    height: 50px;
     line-height: 25px;
     font-size: larger;
     font-weight: bolder;
     padding: 30px;
+    border-bottom: #FCFCFC solid 2px;
+}
+
+.header-logo-div {
+    display: flex;
+}
+
+.header-logo {
+    width: 55px;
+}
+
+.ul-div {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    margin: auto;
+    padding: auto;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-
+    /* margin-top: 40%; */
+    /* padding-top: 100px; */
+    border: red solid 5px;
 }
 
 li {
-    color: #170312;
+    font-size: x-large;
+    font-weight: 900;
+    /* display: inline; */
+    margin-left: 20px;
+    color: #FCFCFC;
+    /* border: yellow solid 2px; */
+}
+
+.hamburger-icon-div {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* margin-left: 80%; */
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 /* I WANT THESE LINKS TO BE WHITE BY DEFAULT */
@@ -48,22 +81,35 @@ li {
 } */
 
 .banner-div {
-    height: 175px;
+    height: 100px;
     border-bottom: #170312 solid 2px;
-    background-color: #F4E04D;
-    line-height: 25px;
+    /* background: rgb(252, 252, 252);
+    background: radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(244, 224, 77, 1) 35%, rgba(0, 212, 255, 1) 100%); */
+    /* background-color: #F4E04D; */
+    line-height: 15px;
     text-align: center;
     font-size: large;
     font-weight: bold;
     padding: 30px;
+}
 
+/* Not sure if a div here is needed */
+/* .site-title-div {
+    display: flex;
+} */
+
+.site-title {
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 75px;
 }
 
 .main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* I want 3 boxes*/ 
+    /* I want 3 boxes*/
     flex-basis: 3;
     /* per row here*/
     margin: 5%;
@@ -74,7 +120,7 @@ h1 {
     text-align: center;
     /* padding-top: 30px; */
     padding-bottom: 30px;
-    
+
 }
 
 h2 {
@@ -98,21 +144,27 @@ h2 {
     box-shadow: 10px 10px 5px #228CDB;
 }
 
+.content-box-2-h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 .content-box-2 {
     /* background-color: #170312; */
+    /* text-transform: uppercase; */
     height: 600px;
     width: 80%;
     margin: 10px;
-    padding: 30px;
-    text-align: center;
+    padding: 75px;
+    text-align: left;
     line-height: 25px;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #170312;
     outline: #170312 solid 5px;
     border-radius: 10%;
     box-shadow: 10px 10px 5px #228CDB;
-  }
+}
 
 
 /* inside content-box class */
@@ -121,6 +173,7 @@ h2 {
     height: 100px;
     padding: 30px;
 }
+
 /* inside content-box class */
 
 .content-box-2-image {
@@ -135,13 +188,14 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-  
-td, th {
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
-  
+
 /* tr:nth-child(even) {
     background-color: #F4E04D;
 } */
@@ -151,30 +205,34 @@ td, th {
     display: flex;
     border-top: #170312 solid 2px;
     height: 100px;
-    background-color: #228CDB;
+    background: rgb(252, 252, 252);
+    background: linear-gradient(100deg, rgba(252, 252, 252, 1) 0%, rgba(23, 3, 18, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    /* background-color: #228CDB; */
     line-height: 25px;
     font-size: larger;
     font-weight: bolder;
     padding: 30px;
+    align-content: space-around;
 }
 
 
 /* LINK STYLING */
 a:link {
-    color: #170312;
-    /* font-weight: bold; */
+    color: #FCFCFC;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:visited {
-    color: #228CDB;
+    color: #E53D00;
 }
 
 a:hover {
-    color: #E53D00;
+    color: #F4E04D;
 
 }
 
+*/
 /* a:active {
     color: #063C5E;
     background-color: #fccf14;
@@ -186,7 +244,8 @@ a:hover {
 .contact-div {
     display: flex;
     margin: 0%;
-    padding: 10px;;
+    padding: 10px;
+    ;
 }
 
 .contact-container {
@@ -201,39 +260,63 @@ a:hover {
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
     background-color: #E53D00;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
     background-color: #228CDB;
-  }
-  
-  /* Add a background color and some padding around the form */
-  /* .container {
+}
+
+/* Add a background color and some padding around the form */
+/* .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
   } */
 
-  .form-button {
-      align-content: center;
-  }
+.form-button {
+    align-content: center;
+}
+
+/* Styling appears at 768px OR SMALLER */
+@media only screen and (max-width: 768px) {
+    li {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        margin: auto;
+        color: #FCFCFC;
+        border: solid hotpink 5px;
+    }
+}
