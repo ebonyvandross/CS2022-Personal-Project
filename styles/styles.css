@@ -46,6 +46,17 @@ body {
     gap: 20px;
 }
 
+/* Hide nav menu by default */
+.nav-ul {
+    display: none;
+}
+
+
+/* To display menu items when ul has class of "open" */
+.nav-ul.open {
+    display: block;
+}
+
 ul {
     list-style-type: none;
     /* border: solid yellow 5px; */
@@ -56,7 +67,7 @@ li {
     font-weight: 900;
     /* margin-left: 20px; */
     /* color: #FCFCFC; */
-    border: white solid 5px;
+    /* border: white solid 5px; */
 }
 
 .hamburger-icon-div {
@@ -198,7 +209,6 @@ th {
 
 .footer-nav-ul {
     display: flex;
-    justify-content: right;
     align-items: center;
     gap: 20px;
     margin: auto;
@@ -221,11 +231,10 @@ a:hover {
 
 }
 
-/* a:active {
+a:active {
     color: #063C5E;
     background-color: #fccf14;
-} */
-/* LINK STYLING */
+}
 
 
 /* FOR FORMS */
@@ -296,19 +305,30 @@ input[type=submit]:hover {
 
 /* Styling appears at 768px OR SMALLER */
 @media only screen and (max-width: 768px) {
-    li {
-        display: none;
-    }
-
     .hamburger-icon {
         display: block;
         float: right;
         /* position: fixed; */
-        margin: auto;
+        margin-left: auto;
         /* border: solid yellow 10px; */
     }
 
-    .nav-ul.active {
+    /* Need text to shrink down in mobile */
+    /* .content-box-2 {
+        
+    } */
+}
+
+@media only screen and (min-width: 768px) {
+    /* Show navbar at 768px or larger */
+    .nav-ul {
         display: block;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 20px;
     }
 }

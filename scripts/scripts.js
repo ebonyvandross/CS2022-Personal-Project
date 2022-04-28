@@ -1,18 +1,16 @@
 console.log("SCRIPTS FOR PERSONAL PROJECT");
 
 // For responsive mobile nav menu
-// 1 Select hamburger menu icon
+// Step 1: identify the event target (by selecting hamburger icon)
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 
-// 2 Select nav list
-const navList = document.querySelector("#nav-list");
-
-// 3 Add event listener for hamburger icon
-hamburgerIcon.addEventListener("click", () => {
-  navList.classList.toggle("open")
-})
-
-// Write function that will show nav menu after clicking hamburger icon
-function shownavMenu() {
-  if hamburgerIcon 
+// Step 2: identify the action to be completed (nav menu will open when hamburger icon is clicked) + write event handler that will complete action
+const toggleNav = function() {
+  const navList = document.querySelector(".nav-ul");
+  navList.classList.toggle("open");
 }
+  
+// Step 3: bind/attach the target element to the event and the event handler function through an event listener (attach hamburger icon to event listener)
+hamburgerIcon.addEventListener("click", toggleNav);
+
+
