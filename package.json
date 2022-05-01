@@ -1,0 +1,32 @@
+{
+  "name": "cs2022-personal-project",
+  "version": "1.0.0",
+  "description": "Let's Start Learning! A website to help adult learners study independantly",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebonyvandross/CS2022-Personal-Project.git"
+  },
+  "author": "Ebony Vandross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebonyvandross/CS2022-Personal-Project/issues"
+  },
+  "homepage": "https://github.com/ebonyvandross/CS2022-Personal-Project#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  }
+}
