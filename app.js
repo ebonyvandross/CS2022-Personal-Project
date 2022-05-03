@@ -9,6 +9,7 @@ const path = require("path");
 const methodOverride = require("method-override");
 // const routes = require("./routes/index")
 
+// Set view engine to ejs
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
