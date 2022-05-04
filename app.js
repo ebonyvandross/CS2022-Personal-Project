@@ -34,8 +34,8 @@ app.get("/blog", (request, response) => {
     response.render("pages/blog")
 })
 
-app.get("/contact", (request, response) => {
-    response.render("pages/contact")
+app.get("/contact-us", (request, response) => {
+    response.render("pages/contact-us")
 })
 
 app.get("/for-instructors", (request, response) => {
