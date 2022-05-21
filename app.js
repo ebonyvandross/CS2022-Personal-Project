@@ -29,10 +29,6 @@ app.get("/contact-us", (request, response) => {
     response.render("pages/contact-us")
 })
 
-app.get("/submit-activities", (request, response) => {
-    response.render("pages/submit-activities")
-})
-
 // Server
 app.listen(PORT, () => {
     console.log(`The server is listening on port ${PORT}`);

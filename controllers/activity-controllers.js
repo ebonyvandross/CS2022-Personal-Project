@@ -2,28 +2,34 @@ const siteData = require('../data/siteData');
 const { v4: uuid } = require('uuid');
 
 module.exports = {
-  listening: (request, response) => {
+  listening_activities: (request, response) => {
     response.render("pages/study-listening", {
     });
+    
   },
 
-  math: (request, response) => {
+  math_activities: (request, response) => {
     response.render("pages/study-math", {
     });
   },
 
-  reading: (request, response) => {
+  reading_activities: (request, response) => {
     response.render("pages/study-reading", {
     });
   },
 
-  speaking: (request, response) => {
+  speaking_activities: (request, response) => {
     response.render("pages/study-speaking", {
     });
   },
 
-  writing: (request, response) => {
+  writing_activities: (request, response) => {
     response.render("pages/study-writing", {
+    });
+  },
+
+  submit_activities: (request, response) => {
+    response.render("pages/submit-activities", {
     });
   },
 

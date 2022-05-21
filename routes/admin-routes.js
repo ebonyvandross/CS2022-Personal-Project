@@ -1,16 +1,22 @@
-// Require Express, Express Router, and site-controller.js
+// Require Express, Express Router, and admin-controllers.js
 const express = require("express");
-const adminCtrl = require("../controllers/admin-controllers");
+const adminController = require("../controllers/admin-controllers");
 const router = express.Router();
 
-// SITE ROUTES - TBD
-router.route("/admin")
-    .get(adminCtrl.admin);
+// ADMIN ROUTES
+router.route("/")
+    .get(adminController.admin);
+
+router.route("/activity-create")
+    .get(adminController.create_activity);
+
+router.route("/activity-update")
+    .get(adminController.update_activity);
 
 // router.route("/admin-console/add-activity")
-//     .get(adminCtrl.add);
+//     .get(adminController.add);
 
 // router.route("/update-activity/:id")
-//     .get(adminCtrl.update);
+//     .get(adminController.update);
 
 module.exports = router;
