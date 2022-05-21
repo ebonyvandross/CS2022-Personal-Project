@@ -7,10 +7,10 @@ const router = express.Router();
 router.route("/")
     .get(siteCtrl.index);
 
-// router.route("/about")
-//     .get(siteCtrl.about);
+router.route("/about")
+    .get(siteCtrl.about);
 
-// router.route("/login")
-//     .get(siteCtrl.login);
+router.route("/login")
+    .get(siteCtrl.login);
 
 module.exports = router;

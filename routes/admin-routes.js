@@ -4,7 +4,7 @@ const adminCtrl = require("../controllers/admin-controllers");
 const router = express.Router();
 
 // SITE ROUTES - TBD
-router.route("/admin-console")
+router.route("/admin")
     .get(adminCtrl.admin);
 
 // router.route("/admin-console/add-activity")
