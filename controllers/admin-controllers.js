@@ -2,15 +2,17 @@ const siteData = require("../data/siteData");
 
 module.exports = {
     admin: (request, response) => {
-        response.render("pages/admin");
+        response.render("pages/admin-console");
 
     },
 
+    // Will I need update properties for each topic?
     create_activity: (request, response) => {
         response.render("pages/activity-create");
 
     },
 
+    // Will I need update properties for each topic?    
     update_activity: (request, response) => {
         response.render("pages/activity-update");
         

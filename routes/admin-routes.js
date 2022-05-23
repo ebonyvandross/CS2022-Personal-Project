@@ -13,7 +13,7 @@ router.route("/activity-create")
 router.route("/activity-update")
     .get(adminController.update_activity);
 
-// router.route("/admin-console/add-activity")
+// router.route("/add-activity")
 //     .get(adminController.add);
 
 // router.route("/update-activity/:id")
