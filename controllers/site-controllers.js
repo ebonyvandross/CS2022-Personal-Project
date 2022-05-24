@@ -11,4 +11,10 @@ module.exports = {
     login: (request, response) => {
         response.render("pages/login")
     },
+    news: (request, response) => {
+        response.render("pages/news")
+    },
+    contact: (request, response) => {
+        response.render("pages/contact-us")
+    },
 };

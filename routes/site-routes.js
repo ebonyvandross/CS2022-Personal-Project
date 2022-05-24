@@ -13,4 +13,10 @@ router.route("/about")
 router.route("/login")
     .get(siteController.login);
 
+router.route("/news")
+    .get(siteController.news);
+
+router.route("/contact-us")
+    .get(siteController.contact);
+
 module.exports = router;

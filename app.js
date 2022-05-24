@@ -20,14 +20,6 @@ app.use(routes);
 
 // Data for EJS files -- TBD
 
-// Routes
-app.get("/blog", (request, response) => {
-    response.render("pages/blog")
-})
-
-app.get("/contact-us", (request, response) => {
-    response.render("pages/contact-us")
-})
 
 // Server
 app.listen(PORT, () => {
