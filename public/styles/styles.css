@@ -203,24 +203,37 @@ th {
     background: rgb(252, 252, 252);
     background: linear-gradient(100deg, rgba(252, 252, 252, 1) 0%, rgba(23, 3, 18, 1) 35%, rgba(0, 212, 255, 1) 100%);
     /* background-color: #228CDB; */
-    line-height: 25px;
-    font-size: larger;
-    font-weight: bolder;
+    /* line-height: 25px; */
+    /* font-size: larger; */
+    /* font-weight: bolder; */
     padding: 30px;
-    align-content: space-around;
+    gap: 10px;
+    color: #FCFCFC;
+    margin: auto;
+    font-size: large;
+
 }
 
-.footer-nav-ul {
+.footer-item {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    gap: 5px;
+    margin: auto;
+
+}
+
+/* .footer-nav-ul {
     display: flex;
     align-items: center;
     gap: 20px;
     margin: auto;
-}
+} */
 
 
 /* LINK STYLING */
 a:link {
-    color: #FCFCFC;
+    /* color: #FCFCFC; */
     font-weight: bold;
     text-decoration: none;
 }
