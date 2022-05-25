@@ -2,10 +2,12 @@
 
     <%- include("../partials/nav.ejs") %>
 
-    <div class="contact-div">
+    <div class="form-div">
 
-        <div class="contact-container">
+        <div class="form-container">
+
             <h1>CONTACT US</h1>
+
             <form action="action_page.php">
 
                 <label for="fname">YOUR FIRST NAME</label>
@@ -20,10 +22,12 @@
                 <label for="message">YOUR MESSAGE/QUESTION</label>
                 <textarea id="message" name="message" placeholder="Type here." style="height:200px"></textarea>
 
-                <input type="submit" class="form-button" value="Submit">
+                <input type="submit" class="form-button-submit" value="Submit">
 
             </form>
+
         </div>
+        
     </div>
 
     <%- include("../partials/footer.ejs") %>

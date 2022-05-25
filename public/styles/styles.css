@@ -304,14 +304,13 @@ a:active {
 
 
 /* FOR FORMS */
-.contact-div {
+.form-div {
     display: flex;
-    margin: 0%;
+    margin: auto;
     padding: 10px;
-    ;
 }
 
-.contact-container {
+.form-container {
     margin: 15%;
     padding: 60px;
     /* text-align: center; */
@@ -344,7 +343,7 @@ textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+.form-button-submit {
     background-color: #E53D00;
     color: white;
     padding: 12px 20px;
@@ -353,20 +352,44 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* Change to Bleu De France when hovering over submit button */
 input[type=submit]:hover {
     background-color: #228CDB;
 }
 
-/* Add a background color and some padding around the form */
-/* .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  } */
-
-.form-button {
+.form-button-add {
     align-content: center;
+    margin: auto;
+    color: #f2f2f2;
+    background-color: #228CDB;
+    font-weight: bold;
+    height: 30px;
+}
+
+/* input[type=add]:hover {
+    background-color: #F4E04D;
+} */
+
+.form-button-edit {
+    align-content: center;
+    margin: auto;
+    color: #170312;
+    background-color: #F4E04D;
+    font-weight: bold;
+    height: 30px;
+
+
+}
+
+.form-button-delete {
+    align-content: center;
+    margin: auto;
+    color: #f2f2f2;
+    background-color: #E53D00;
+    font-weight: bold;
+    height: 30px;
+
+
 }
 
 /* Styling appears at 768px OR SMALLER */
