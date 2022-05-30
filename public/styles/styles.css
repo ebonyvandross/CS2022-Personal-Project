@@ -304,15 +304,12 @@ a:active {
 
 
 /* FOR FORMS */
-.form-div {
-    display: flex;
-    margin: auto;
-    padding: 10px;
-}
 
 .form-container {
-    margin: 15%;
-    padding: 60px;
+    /* display: flex; */
+    margin: auto;
+    padding: 30px;
+    width: 80%;
     /* text-align: center; */
     line-height: 25px;
     outline: #170312 solid 5px;
