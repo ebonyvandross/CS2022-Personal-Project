@@ -5,27 +5,18 @@ module.exports = [
   
   {
     _id: uuid(),
-    title: "It's dictation time!",
-    link: "???",
-    source: "hp5.org",
+    title: "Speaking exercise #1",
+    link: "https://h5p.org/h5p/embed/1268967",
   },
   {
     _id: uuid(),
-    title: "It's dictation time!",
-    link: "???",
-    source: "hp5.org",
+    title: "Speaking exercise #2",
+    link: "https://h5p.org/h5p/embed/1268969",
   },
   {
     _id: uuid(),
-    title: "It's dictation time!",
-    link: "???",
-    source: "hp5.org",
-  },
-  {
-    _id: uuid(),
-    title: "It's dictation time!",
-    link: "???",
-    source: "hp5.org",
+    title: "Speaking exercise #3",
+    link: "https://h5p.org/h5p/embed/1268973",
   },
   
   ]
