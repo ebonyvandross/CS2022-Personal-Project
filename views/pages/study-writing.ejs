@@ -9,7 +9,18 @@
                 <tr>
                     <th>Title</th>
                 </tr>
-                <tr>
+
+                <% writingActivities.forEach( activity=> { %>
+                    <tr>
+                        <td>
+                            <%= activity.title %>
+                                <br>
+                                <iframe src=<%=activity.link %></iframe>
+                        </td>
+                    </tr>
+                    <% }); %>
+
+                        <!-- <tr>
                     <td><iframe src="https://h5p.org/h5p/embed/1268975" width="1090" height="383" frameborder="0"
                             allowfullscreen="allowfullscreen"
                             allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
@@ -32,7 +43,7 @@
                         <br>
                         Created with hp5.org
                     </td>
-                </tr>
+                </tr> -->
 
             </table>
         </div>
