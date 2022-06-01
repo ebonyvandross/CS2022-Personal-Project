@@ -18,10 +18,8 @@ app.use(methodOverride("_method"))
 app.use(morgan("dev"));
 app.use(routes);
 
-// Data for EJS files -- TBD
+require('./config/connection');
 
-
-// Server
 app.listen(PORT, () => {
     console.log(`The server is listening on port ${PORT}`);
 });

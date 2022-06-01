@@ -3,28 +3,30 @@
   <%- include("../partials/nav.ejs") %>
 
     <div class="main-content">
+
       <div class="content-box-2">
+
         <h1>Login</h1>
-      <form action="/login" method="POST">
-        <div>
-          <label for="username">Username </label>
-          <input type="text" name="username" id="username" required />
-        </div>
-        <div>
-          <label for="password">Password: </label>
-          <input type="password" name="password" id="password" required />
-        </div>
-        <div>
-          <input type="submit" value="Submit" />
-        </div>
+        <form action="/login" method="POST">
 
-        <!-- <button>
-          <a href="/auth/google" role="button">Login or Register with Google</a>
-        </button>
+          <div>
+            <label for="username">Username </label>
+            <input type="email" name="username" id="username" required />
+          </div>
 
-        <p>Don't Have An Account? <a href="/register">Create one here.</a></p> -->
-      </form>
+          <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" minlength="10" required />
+          </div>
+
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+
+        </form>
+
       </div>
+
     </div>
 
     <%- include("../partials/footer.ejs") %>

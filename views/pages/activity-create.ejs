@@ -3,22 +3,28 @@
     <%- include("../partials/nav.ejs") %>
 
         <div class="main-content">
+
             <div class="content-box-2">
+
                 <h1>ADMIN CREATE PAGE</h1>
                 <form action="action_page.php">
 
-                    <label for="message"></label>
-                    <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
+                    <div>
+                        <label for="title">Title: </label>
+                        <input type="text" name="title" id="title" minlength="4" required />
+                    </div>
 
-                    <!-- add a new input field that has a type of text (not sure this step is needed for my project) -->
-                    <label for="image">NEW:</label>
-                    <input type="text" id="image" name="image" placeholder="image" minlength="1" required>
-                    <!-- add a new input field that has a type of text (not sure this step is needed for my project) -->
-                    
+                    <div>
+                        <label for="link">Link: </label>
+                        <input type="text" name="link" id="author" minlength="5" required />
+                    </div>
+
                     <input type="submit" class="form-button" value="CREATE">
 
                 </form>
+                
             </div>
+
         </div>
 
         <%- include("../partials/footer.ejs") %>

@@ -1,4 +1,5 @@
-const siteData = require("../data/siteData");
+// const siteData = require("../data/siteData");
+const Activity = require("../models/activity-model");
 
 module.exports = {
     admin: (request, response) => {
