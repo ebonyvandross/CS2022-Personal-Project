@@ -10,12 +10,12 @@ module.exports = [
   },
   {
     _id: uuid(),
-    title: "Math exercise #1",
+    title: "Math exercise #2",
     link: "https://h5p.org/h5p/embed/1268956",
   },
   {
     _id: uuid(),
-    title: "Math exercise #1",
+    title: "Math exercise #3",
     link: "https://h5p.org/h5p/embed/1268957",
   },
 
