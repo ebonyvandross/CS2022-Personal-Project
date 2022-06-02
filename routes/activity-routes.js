@@ -3,11 +3,6 @@ const express = require("express");
 const activityController = require("../controllers/activity-controllers");
 const router = express.Router();
 
-// ACTIVITY ROUTES - TBD
-
-// router.route("/")
-//     .get(siteController.index);
-
 router.route("/study-listening")
     .get(activityController.listening_activities);
 

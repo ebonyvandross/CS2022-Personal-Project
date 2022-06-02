@@ -4,7 +4,6 @@ const readingData = require("../data/readingData");
 const speakingData = require("../data/speakingData");
 const writingData = require("../data/writingData");
 const Activity = require("../models/activity-model");
-const { v4: uuid } = require('uuid');
 
 module.exports = {
   listening_activities: (request, response) => {
