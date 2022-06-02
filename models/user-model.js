@@ -39,7 +39,7 @@ passport.deserializeUser(function (user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://lets-start-learning-2022.herokuapp.com/auth//google/admin",
+    callbackURL: "https://lets-start-learning-2022.herokuapp.com/auth/google/admin",
 },
     function (accessToken, refreshToken, email, cb) {
         console.log(email);
