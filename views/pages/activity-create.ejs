@@ -10,6 +10,18 @@
                 <form action="action_page.php">
 
                     <div>
+                        <label for="activity-type">Select activity type:</label>
+                        <select name="activity-type" id="activity-type">
+                            <option value="comprehension">comprehension</option>
+                            <option value="listening">listening</option>
+                            <option value="math">math</option>
+                            <option value="reading">reading</option>
+                            <option value="speaking">speaking</option>
+                            <option value="writing">writing</option>
+                        </select>
+                    </div>
+
+                    <div>
                         <label for="title">Title: </label>
                         <input type="text" name="title" id="title" minlength="4" required />
                     </div>
@@ -19,10 +31,10 @@
                         <input type="text" name="link" id="author" minlength="5" required />
                     </div>
 
-                    <input type="submit" class="form-button" value="CREATE">
+                    <input type="submit" class="form-button" value="Submit">
 
                 </form>
-                
+
             </div>
 
         </div>
