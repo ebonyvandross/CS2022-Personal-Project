@@ -2,32 +2,26 @@
 
     <%- include("../partials/nav.ejs") %>
 
-    <div class="form-div">
+        <div class="main-content">
 
-        <div class="form-container">
+            <div class="content-box-2">
 
-            <h1>CONTACT US</h1>
+                <h1>CONTACT US</h1>
 
-            <form action="action_page.php">
+                <form action="action_page.php">
 
-                <label for="fname">YOUR FIRST NAME</label>
-                <input type="text" id="fname" name="firstname" placeholder="Type here.">
+                    <label for="email">YOUR EMAIL ADDRESS</label>
+                    <input type="text" id="email" name="email" placeholder="Type here.">
 
-                <label for="lname">YOUR LAST NAME</label>
-                <input type="text" id="lname" name="lastname" placeholder="Type here.">
+                    <label for="message">YOUR MESSAGE/QUESTION</label>
+                    <textarea id="message" name="message" placeholder="Type here." style="height:200px"></textarea>
 
-                <label for="email">YOUR EMAIL ADDRESS</label>
-                <input type="text" id="email" name="email" placeholder="Type here.">
+                    <input type="submit" class="form-button-submit" value="Submit">
 
-                <label for="message">YOUR MESSAGE/QUESTION</label>
-                <textarea id="message" name="message" placeholder="Type here." style="height:200px"></textarea>
+                </form>
 
-                <input type="submit" class="form-button-submit" value="Submit">
-
-            </form>
+            </div>
 
         </div>
-        
-    </div>
 
-    <%- include("../partials/footer.ejs") %>
+        <%- include("../partials/footer.ejs") %>
