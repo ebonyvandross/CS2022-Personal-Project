@@ -5,7 +5,7 @@
         <div class="main-content">
 
             <div class="form-container">
-                
+
                 <h1>ADMIN PAGE</h1>
 
                 <button type="button" class="form-button-add" value="Add">ADD ACTIVITY</button>
@@ -18,49 +18,19 @@
                         <th>EDIT</th>
                         <th>DELETE</th>
                     </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
-                    <tr>
-                        <td>TBD</td>
-                        <td><button type="button" class="form-button-edit">EDIT</button></td>
-                        <td><button type="button" class="form-button-delete">DELETE</button></td>
-                    </tr>
 
-                    <!-- USER LOGOUT -->
-                    <a href="/logout" class="fas fa-sign-out-alt" value="/logout"></a>
+                    <% listeningActivities.forEach( activity=> { %>
+
+                        <tr>
+                            <td>TBD</td>
+                            <td><button type="button" class="form-button-edit">EDIT</button></td>
+                            <td><button type="button" class="form-button-delete">DELETE</button></td>
+                        </tr>
+
+                        <% }); %>
+
+                            <!-- USER LOGOUT -->
+                            <a href="/logout" class="fas fa-sign-out-alt" value="/logout"></a>
 
                 </table>
                 </p>

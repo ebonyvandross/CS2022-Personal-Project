@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const { Schema } = mongoose;
-let GoogleStrategy = require("passport-google-oauth20").Strategy;
+// Changed below from let to const for no reason in particular
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const findOrCreate = require("mongoose-findorcreate");
 
 const userSchema = new Schema({
