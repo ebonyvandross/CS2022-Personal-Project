@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.route("/")
     .get(activityController.all_activities);
+// .post(activityController.post_activity);
 
 router.route("/study-listening")
     .get(activityController.listening_activities);
@@ -19,6 +20,7 @@ router.route("/study-speaking")
 
 router.route("/study-writing")
     .get(activityController.writing_activities);
+
 
 // router.route("/submit-activities")
 //     .get(activityController.submit_activities);

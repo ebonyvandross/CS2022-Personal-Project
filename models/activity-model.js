@@ -10,7 +10,7 @@ const activitySchema = new Schema({
     link: {
         type: String,
         required: [true, "A link is required."],
-        minlength: [5, "Minimum length for the link is 5 characters."]
+        minlength: [1, "Minimum length for the link is 1 character."]
     },
     type: {
         type: String,

@@ -25,13 +25,13 @@ router.route("/admin-writing")
 router.route("/activity-create")
     .get(adminController.create_activity);
 
-router.route("/activity-update")
-    .get(adminController.update_activity);
-
 router.route("/activity")
     .post(adminController.post_activity);
 
-// router.route("/update-activity/:id")
-//     .get(adminController.update);
+router.route("/:_id/activity-update")
+    .get(adminController.activity_update_put);
+
+router.route("/:_id")
+    .delete(adminController.activity_delete)
 
 module.exports = router;

@@ -102,16 +102,29 @@ module.exports = {
         newActivity.save()
         response.redirect("/admin/activity-create")
     },
+    // ^^^ WORKING CODE ^^^^
 
-    update_activity: (request, response) => {
-        if (request.isAuthenticated()) {
-            response.render("pages/activity-update");
-        } else {
-            response.redirect("/login")
-        }
+    // TEST CODE
+    activity_update_put: (request, response) => {
+        const { _id } = request.params;
+        const { title, link, type } = request.body;
+
+        Activity.findByIdAndUpdate(_id, {
+            $set: {
+                title: title,
+                link: link,
+                type: type,
+            }
+        }, { new: true }, error => {
+            if (error) {
+                return error;
+            } else {
+                response.redirect("/admin/activity-update");
+            }
+        })
     },
 
-    delete_activity: (request, response) => {
+    activity_delete: (request, response) => {
         const { _id } = request.params;
         Activity.deleteOne({ _id: _id }, error => {
             if (error) {
@@ -122,4 +135,24 @@ module.exports = {
         });
     }
 
+    // OLD CODE
+    // update_activity: (request, response) => {
+    //     if (request.isAuthenticated()) {
+    //         response.render("pages/activity-update");
+    //     } else {
+    //         response.redirect("/login")
+    //     }
+    // },
+
+    // delete_activity: (request, response) => {
+    //     const { _id } = request.params;
+    //     Activity.deleteOne({ _id: _id }, error => {
+    //         if (error) {
+    //             return error;
+    //         } else {
+    //             response.redirect("/admin/admin-console")
+    //         }
+    //     });
+    // }
 }
+

@@ -25,13 +25,24 @@
                             <td>
                                 <%=activity.title %>
                             </td>
-                            <td><button type="button" class="form-button-edit">EDIT</button></td>
-                            <td><button type="button" class="form-button-delete">DELETE</button></td>
+                            <td>
+                                <button class="form-button-edit">
+                                    <a href="./<%= activity._id %>/activity-update">EDIT
+                                    </a>
+                                </button>
+                            </td>
+                            <td>
+                                <form action="/activities/<%= activity._id %>?_method=DELETE" method="POST"
+                                    enctype="application/x-www-form-urlencoded" class="inline">
+                                    <button class="form-button-delete" type="submit">DELETE</button>
+                                </form>
+                            </td>
+
                         </tr>
                         <% }); %>
 
                             <!-- USER LOGOUT -->
-                            <a href="/logout" value="/logout"></a>
+                            <!-- <a href="/logout" value="/logout"></a> -->
 
                 </table>
                 </p>

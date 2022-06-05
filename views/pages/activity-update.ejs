@@ -6,13 +6,12 @@
 
             <div class="content-box-2">
 
-                <h1>ADMIN UPDATE PAGE</h1>
-                <form action="action_page.php">
+                <h1>ADMIN ACTIVITY UPDATE PAGE</h1>
+                <form action="/admin/activity" method="put">
 
                     <div>
-                        <label for="activity-type">Select activity type:</label>
-                        <select name="activity-type" id="activity-type">
-                            <option value="comprehension">comprehension</option>
+                        <label for="type">Select activity type:</label>
+                        <select name="type" id="type">
                             <option value="listening">listening</option>
                             <option value="math">math</option>
                             <option value="reading">reading</option>
@@ -28,10 +27,10 @@
 
                     <div>
                         <label for="link">Link: </label>
-                        <input type="text" name="link" id="author" minlength="5" required />
+                        <input type="text" name="link" required />
                     </div>
 
-                    <input type="submit" class="form-button" value="UPDATE">
+                    <input type="submit" class="form-button" value="Submit">
 
                 </form>
 
