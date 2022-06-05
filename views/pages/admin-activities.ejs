@@ -2,14 +2,15 @@
 
     <%- include("../partials/nav.ejs") %>
 
+        <!-- TEMPLATE FOR EACH ADMIN ACTIVITY PAGE -->
         <div class="main-content">
 
             <div class="form-container">
 
                 <h1>ADMIN PAGE</h1>
 
-                <button type="button" class="form-button-add" value="Add">ADD ACTIVITY</button>
-                <br>
+                <button type="button" class="form-button-add" value="Add"><a href="/admin/activity-create">ADD NEW
+                        ACTIVITY</a></button>
 
                 <p>
                 <table id="activity-list">
@@ -37,5 +38,7 @@
 
             </div>
         </div>
+        <!-- NOT SURE THIS PAGE IS NEEDED -->
+
 
         <%- include("../partials/footer.ejs") %>

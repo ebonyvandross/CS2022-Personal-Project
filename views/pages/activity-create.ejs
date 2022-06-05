@@ -6,13 +6,12 @@
 
             <div class="content-box-2">
 
-                <h1>ADMIN CREATE PAGE</h1>
+                <h1>ADMIN ACTIVITY CREATE PAGE</h1>
                 <form action="/admin/activity" method="post">
 
                     <div>
                         <label for="type">Select activity type:</label>
                         <select name="type" id="type">
-                            <option value="comprehension">comprehension</option>
                             <option value="listening">listening</option>
                             <option value="math">math</option>
                             <option value="reading">reading</option>
@@ -28,7 +27,7 @@
 
                     <div>
                         <label for="link">Link: </label>
-                        <input type="text" name="link" minlength="5" required />
+                        <input type="text" name="link" minlength="1" required />
                     </div>
 
                     <input type="submit" class="form-button" value="Submit">

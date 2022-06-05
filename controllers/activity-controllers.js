@@ -1,55 +1,69 @@
-// const listeningData = require("../data/listeningData");
-// const mathData = require("../data/mathData");
-// const readingData = require("../data/readingData");
-// const speakingData = require("../data/speakingData");
-// const writingData = require("../data/writingData");
+const req = require("express/lib/request");
 const Activity = require("../models/activity-model");
 
 module.exports = {
   all_activities: (request, response) => {
-    Activity.find({}, (error, allActivities) => {
+    response.render("pages/activities");
+  },
+
+  listening_activities: (request, response) => {
+    Activity.find({ type: "listening" }, (error, listeningActivities) => {
       if (error) {
         return error;
       } else {
-        response.render("pages/admin-listening", {
-          activityArray: allActivities
-        });
+        console.log(listeningActivities);
+        response.render("pages/activities", { allActivities: listeningActivities });
       }
     });
   },
-    listening_activities: (request, response) => {
-      response.render("pages/study-listening", {
-        allActivities: allActivities
-      });
-    },
 
-      math_activities: (request, response) => {
-        response.render("pages/study-math", {
-          allActivities: mathData
-        });
-      },
+  math_activities: (request, response) => {
+    Activity.find({ type: "math" }, (error, mathActivities) => {
+      if (error) {
+        return error;
+      } else {
+        console.log(mathActivities);
+        response.render("pages/activities", { allActivities: mathActivities });
+      }
+    });
+  },
 
-        reading_activities: (request, response) => {
-          response.render("pages/study-reading", {
-            allActivities: readingData
-          });
-        },
+  reading_activities: (request, response) => {
+    Activity.find({ type: "reading" }, (error, readingActivities) => {
+      if (error) {
+        return error;
+      } else {
+        console.log(readingActivities);
+        response.render("pages/activities", { allActivities: readingActivities });
+      }
+    });
+  },
 
-          speaking_activities: (request, response) => {
-            response.render("pages/study-speaking", {
-              allActivities: speakingData
-            });
-          },
+  speaking_activities: (request, response) => {
+    Activity.find({ type: "speaking" }, (error, speakingActivities) => {
+      if (error) {
+        return error;
+      } else {
+        console.log(speakingActivities);
+        response.render("pages/activities", { allActivities: speakingActivities });
+      }
+    });
+  },
 
-            writing_activities: (request, response) => {
-              response.render("pages/study-writing", {
-                allActivities: writingData
-              });
-            },
+  writing_activities: (request, response) => {
+    Activity.find({ type: "writing" }, (error, writingActivities) => {
+      if (error) {
+        return error;
+      } else {
+        console.log(writingActivities);
+        response.render("pages/activities", { allActivities: writingActivities });
+      }
+    });
+  },
 
-              submit_activities: (request, response) => {
-                response.render("pages/submit-activities");
-              },
-
+  // submit_activities: (request, response) => {
+  //   response.render("pages/submit-activities");
+  // },
 
 }
+

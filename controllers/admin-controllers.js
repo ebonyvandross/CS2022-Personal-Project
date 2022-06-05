@@ -4,14 +4,13 @@ const Activity = require("../models/activity-model");
 module.exports = {
     admin: (request, response) => {
         if (request.isAuthenticated()) {
-
             response.render("pages/admin-console");
         }
-
     },
+
     admin_listening: (request, response) => {
         if (request.isAuthenticated()) {
-            Activity.find({type:"listening"}, (error, listeningActivities) => {
+            Activity.find({ type: "listening" }, (error, listeningActivities) => {
                 if (error) {
                     return error;
                 } else {
@@ -23,9 +22,10 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
     admin_math: (request, response) => {
         if (request.isAuthenticated()) {
-            Activity.find({type:"math"}, (error, mathActivities) => {
+            Activity.find({ type: "math" }, (error, mathActivities) => {
                 if (error) {
                     return error;
                 } else {
@@ -37,9 +37,10 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
     admin_reading: (request, response) => {
         if (request.isAuthenticated()) {
-            Activity.find({type:"reading"}, (error, readingActivities) => {
+            Activity.find({ type: "reading" }, (error, readingActivities) => {
                 if (error) {
                     return error;
                 } else {
@@ -51,9 +52,10 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
     admin_speaking: (request, response) => {
         if (request.isAuthenticated()) {
-            Activity.find({type:"speaking"}, (error, speakingActivities) => {
+            Activity.find({ type: "speaking" }, (error, speakingActivities) => {
                 if (error) {
                     return error;
                 } else {
@@ -65,9 +67,10 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
     admin_writing: (request, response) => {
         if (request.isAuthenticated()) {
-            Activity.find({type:"writing"}, (error, writingActivities) => {
+            Activity.find({ type: "writing" }, (error, writingActivities) => {
                 if (error) {
                     return error;
                 } else {
@@ -79,11 +82,6 @@ module.exports = {
             response.redirect("/login")
         }
     },
-    // Will I need update properties for each topic?
-    // create_activity: (request, response) => {
-    //     response.render("pages/activity-create");
-
-    // },
 
     create_activity: (request, response) => {
         if (request.isAuthenticated()) {
@@ -92,22 +90,18 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
     post_activity: (request, response) => {
-        const {title, link, type}=request.body
-        console.log(request.body); 
-        const newActivity = new Activity ({
-             title: title,
-             link: link,
-             type: type
+        const { title, link, type } = request.body
+        console.log(request.body);
+        const newActivity = new Activity({
+            title: title,
+            link: link,
+            type: type
         })
         newActivity.save()
         response.redirect("/admin/activity-create")
     },
-
-    // Will I need update properties for each topic?    
-    // update_activity: (request, response) => {
-    //     response.render("pages/activity-update");
-    // },
 
     update_activity: (request, response) => {
         if (request.isAuthenticated()) {
@@ -116,5 +110,16 @@ module.exports = {
             response.redirect("/login")
         }
     },
+
+    delete_activity: (request, response) => {
+        const { _id } = request.params;
+        Activity.deleteOne({ _id: _id }, error => {
+            if (error) {
+                return error;
+            } else {
+                response.redirect("/admin/admin-console")
+            }
+        });
+    }
 
 }

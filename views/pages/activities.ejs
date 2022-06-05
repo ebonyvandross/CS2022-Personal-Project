@@ -2,21 +2,22 @@
 
     <%- include("../partials/nav.ejs") %>
 
+        <!-- TEMPLATE TO BE FOR EACH ADMIN ACTIVITY PAGE -->
         <div class="main-content">
-            <h2>LISTENING ACTIVITIES</h2>
+            <!-- <h2>LISTENING ACTIVITIES</h2> -->
 
             <table>
                 <tr>
-                    <th>Listening Activities</th>
+                    <!-- <th>Listening Activities</th> -->
                 </tr>
 
-                <!-- <% allActivities.forEach( activity=> { %> -->
+                <% allActivities.forEach( activity=> { %>
                     <tr>
                         <td>
                             <iframe src=<%=activity.link %>></iframe>
                         </td>
                     </tr>
-                <!-- <% }); %> -->
+                    <% }); %>
 
             </table>
         </div>
