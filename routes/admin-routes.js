@@ -28,10 +28,10 @@ router.route("/activity-create")
 router.route("/activity")
     .post(adminController.post_activity);
 
-router.route("/:_id/activity-update")
+router.route("/._id/activity-update")
     .get(adminController.activity_update_put);
 
-router.route("/:_id")
+router.route("/._id")
     .delete(adminController.activity_delete)
 
 module.exports = router;

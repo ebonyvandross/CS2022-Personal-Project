@@ -27,12 +27,12 @@
                             </td>
                             <td>
                                 <button class="form-button-edit">
-                                    <a href="./<%= activity._id %>/activity-update">EDIT
+                                    <a href="/activity/<%= activity._id %>/activity-update">EDIT
                                     </a>
                                 </button>
                             </td>
                             <td>
-                                <form action="/activities/<%= activity._id %>?_method=DELETE" method="POST"
+                                <form action="/activity/<%= activity._id %>?_method=DELETE" method="POST"
                                     enctype="application/x-www-form-urlencoded" class="inline">
                                     <button class="form-button-delete" type="submit">DELETE</button>
                                 </form>
