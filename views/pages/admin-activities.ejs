@@ -1,0 +1,41 @@
+<%- include("../partials/head.ejs") %>
+
+    <%- include("../partials/nav.ejs") %>
+
+        <div class="main-content">
+
+            <div class="form-container">
+
+                <h1>ADMIN PAGE</h1>
+
+                <button type="button" class="form-button-add" value="Add">ADD ACTIVITY</button>
+                <br>
+
+                <p>
+                <table id="activity-list">
+                    <tr>
+                        <th>ACTIVITY NAME</th>
+                        <th>EDIT</th>
+                        <th>DELETE</th>
+                    </tr>
+
+                    <% allActivities.forEach( activity=> { %>
+                        <tr>
+                            <td>
+                                <%=activity.title %>
+                            </td>
+                            <td><button type="button" class="form-button-edit">EDIT</button></td>
+                            <td><button type="button" class="form-button-delete">DELETE</button></td>
+                        </tr>
+                        <% }); %>
+
+                            <!-- USER LOGOUT -->
+                            <a href="/logout" value="/logout"></a>
+
+                </table>
+                </p>
+
+            </div>
+        </div>
+
+        <%- include("../partials/footer.ejs") %>

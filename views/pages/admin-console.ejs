@@ -1,41 +1,29 @@
 <%- include("../partials/head.ejs") %>
 
-    <%- include("../partials/nav.ejs") %>
+        <%- include("../partials/nav.ejs") %>
 
-        <div class="main-content">
+                <!-- <div class="site-title-div">
+                        <h1 class="site-title">Let's Start Learning</h1>
+                </div> -->
 
-            <div class="form-container">
+                <div class="main-content">
 
-                <h1>ADMIN PAGE</h1>
+                        <div class="content-box"><a href="/admin/admin-listening">update listening activities
+                                        <img src="/images/listening.png" class=content-box-image alt="for learners"></a>
+                        </div>
+                        <div class="content-box"><a href="/admin/admin-math">update math activities
+                                        <img src="/images/math.png" class=content-box-image alt="for learners"></a>
+                        </div>
+                        <div class="content-box"><a href="/admin/admin-reading">update reading activities
+                                        <img src="/images/reading.png" class=content-box-image alt="for learners"></a>
+                        </div>
+                        <div class="content-box"><a href="/admin/admin-speaking">update speaking activities
+                                        <img src="/images/speaking.png" class=content-box-image alt="for learners"></a>
+                        </div>
+                        <div class="content-box"><a href="/admin/admin-writing">update writing activities
+                                        <img src="/images/writing.png" class=content-box-image alt="for learners"></a>
+                        </div>
 
-                <button type="button" class="form-button-add" value="Add">ADD ACTIVITY</button>
-                <br>
+                </div>
 
-                <p>
-                <table id="activity-list">
-                    <tr>
-                        <th>ACTIVITY NAME</th>
-                        <th>EDIT</th>
-                        <th>DELETE</th>
-                    </tr>
-
-                    <% listeningActivities.forEach( activity=> { %>
-
-                        <tr>
-                            <td>TBD</td>
-                            <td><button type="button" class="form-button-edit">EDIT</button></td>
-                            <td><button type="button" class="form-button-delete">DELETE</button></td>
-                        </tr>
-
-                        <% }); %>
-
-                            <!-- USER LOGOUT -->
-                            <a href="/logout" class="fas fa-sign-out-alt" value="/logout"></a>
-
-                </table>
-                </p>
-
-            </div>
-        </div>
-
-        <%- include("../partials/footer.ejs") %>
+                <%- include("../partials/footer.ejs") %>
