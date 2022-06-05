@@ -1,5 +1,4 @@
 const express = require("express");
-// const siteController = require("../controllers/site-controllers");
 const activityController = require("../controllers/activity-controllers");
 const router = express.Router();
 
