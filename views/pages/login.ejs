@@ -7,7 +7,7 @@
       <div class="content-box-2">
 
         <h1>Login</h1>
-        <form action="/login" method="POST">
+        <form class="content-box-2-form" action="/login" method="POST">
 
           <div>
             <label for="username">Username </label>
@@ -15,16 +15,13 @@
           </div>
 
           <div>
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password" minlength="10" required />
+            <label for="passoword">Password: </label>
+            <input type="text" name="password" id="password" minlength="4" required />
           </div>
 
-          <div>
-            <input type="submit" value="Submit" />
-          </div>
+          <input type="submit" class="form-button-submit" value="Submit">
 
-          <p><a href="/auth/google" class="btn">Login with Google</a></p>
-          <!-- <p>Don't Have An Account? <a href="/register">Create one here.</a></p> -->
+          <p><a href="/auth/google" class="btn"><b>LOGIN WITH GOOGLE</b></a></p>
 
         </form>
 
