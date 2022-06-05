@@ -105,6 +105,20 @@ module.exports = {
     // ^^^ WORKING CODE ^^^^
 
     // TEST CODE
+
+    activity_update_get: (request, response) => {
+        const { _id } = request.params;
+        Activity.findOne({ _id: _id }, (error, allActivities) => {
+            if (error) {
+                return error;
+            } else {
+                response.render("pages/activities", {
+                    allActivities: allActivities
+                });
+            }
+        })
+    },
+
     activity_update_put: (request, response) => {
         const { _id } = request.params;
         const { title, link, type } = request.body;
@@ -135,24 +149,5 @@ module.exports = {
         });
     }
 
-    // OLD CODE
-    // update_activity: (request, response) => {
-    //     if (request.isAuthenticated()) {
-    //         response.render("pages/activity-update");
-    //     } else {
-    //         response.redirect("/login")
-    //     }
-    // },
 
-    // delete_activity: (request, response) => {
-    //     const { _id } = request.params;
-    //     Activity.deleteOne({ _id: _id }, error => {
-    //         if (error) {
-    //             return error;
-    //         } else {
-    //             response.redirect("/admin/admin-console")
-    //         }
-    //     });
-    // }
 }
-
