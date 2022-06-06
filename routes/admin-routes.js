@@ -2,7 +2,6 @@ const express = require("express");
 const adminController = require("../controllers/admin-controllers");
 const router = express.Router();
 
-// ADMIN ROUTES
 router.route("/")
     .get(adminController.admin);
 
