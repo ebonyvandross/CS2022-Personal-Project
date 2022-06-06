@@ -1,4 +1,3 @@
-// Require Express, Express Router, and admin-controllers.js
 const express = require("express");
 const adminController = require("../controllers/admin-controllers");
 const router = express.Router();
@@ -32,6 +31,7 @@ router.route("/:_id/activity-update")
     .get(adminController.activity_update_get);
 
 router.route("/:_id")
+    // .get(adminController.activity_detail_get)
     .put(adminController.activity_update_put)
     .delete(adminController.activity_delete)
 

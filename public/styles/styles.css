@@ -127,6 +127,35 @@ h2 {
     padding-bottom: 30px;
 }
 
+.top-content-box-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* I want 3 boxes*/
+    flex-basis: 33.333333%;
+    /* per row here*/
+    margin: 5%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+
+.top-content-box {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    /* margin: 10px; */
+    /* margin-bottom: 0%; */
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: #170312 solid 5px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #228CDB;
+}
+
 .content-box {
     height: 200px;
     width: 200px;

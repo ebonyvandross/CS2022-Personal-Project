@@ -1,0 +1,24 @@
+<%- include("../partials/head.ejs") %>
+
+    <%- include("../partials/nav.ejs") %>
+
+        <div class="main-content">
+
+            <div class="content-box-2">
+
+                <h1>ACTIVITY DETAIL PAGE</h1>
+
+                <p><strong>Title: </strong>
+                    <%= activity.title %>
+                </p>
+                <p><strong>Link:</strong>
+                    <%= activity.link %>
+                </p>
+                <p><strong>Type:</strong> $<%= activity.type %>
+                </p>
+
+            </div>
+
+        </div>
+
+        <%- include("../partials/footer.ejs") %>

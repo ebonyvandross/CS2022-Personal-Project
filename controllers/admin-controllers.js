@@ -104,7 +104,19 @@ module.exports = {
     },
     // ^^^ WORKING CODE ^^^^
 
-    // TEST CODE
+    // TEST CODE 6/5
+    activity_detail: (request, response) => {
+        const { _id } = request.params;
+        Activity.findOne({ _id: _id }, (error, allActivities) => {
+            if (error) {
+                return error;
+            } else {
+                response.render("pages/activity-detail", {
+                    allActivities: allActivities
+                });
+            }
+        })
+    },
 
     activity_update_get: (request, response) => {
         const { _id } = request.params;
@@ -122,7 +134,6 @@ module.exports = {
     activity_update_put: (request, response) => {
         const { _id } = request.params;
         const { title, link, type } = request.body;
-
         Activity.findByIdAndUpdate(_id, {
             $set: {
                 title: title,
