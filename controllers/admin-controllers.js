@@ -156,7 +156,7 @@ module.exports = {
             if (error) {
                 return error;
             } else {
-                response.redirect("/admin/admin-console")
+                response.redirect("/admin")
             }
         });
     }
