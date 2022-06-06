@@ -2,7 +2,7 @@
 
     <%- include("../partials/nav.ejs") %>
 
-        <!-- TEMPLATE FOR EACH ADMIN ACTIVITY PAGE -->
+        <!-- TEMPLATE FOR EACH ADMIN ACTIVITY PAGE (HAS EDIT/DELETE BUTTONS) -->
         <div class="main-content">
 
             <div class="form-container">
@@ -27,7 +27,7 @@
                             </td>
                             <td>
                                 <button class="form-button-edit">
-                                    <a href="/activity/<%= activity._id %>/activity-update">EDIT
+                                    <a href="/admin/<%= activity._id %>/activity-update">EDIT
                                     </a>
                                 </button>
                             </td>
@@ -49,7 +49,5 @@
 
             </div>
         </div>
-        <!-- NOT SURE THIS PAGE IS NEEDED -->
-
 
         <%- include("../partials/footer.ejs") %>

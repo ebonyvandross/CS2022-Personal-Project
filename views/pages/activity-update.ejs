@@ -7,7 +7,7 @@
             <div class="content-box-2">
 
                 <h1>ADMIN ACTIVITY UPDATE PAGE</h1>
-                <form action="/admin/activity" method="put">
+                <form action="/admin/admin-activities" method="put">
 
                     <div>
                         <label for="type">Select activity type:</label>
@@ -17,17 +17,18 @@
                             <option value="reading">reading</option>
                             <option value="speaking">speaking</option>
                             <option value="writing">writing</option>
+                            <option selected value="<%=allActivities.type %>"><%=allActivities.type %></option>
                         </select>
                     </div>
 
                     <div>
                         <label for="title">Title: </label>
-                        <input type="text" name="title" id="title" minlength="4" required />
+                        <input type="text" name="title" id="title" minlength="4" value="<%=allActivities.title %>" required />
                     </div>
 
                     <div>
                         <label for="link">Link: </label>
-                        <input type="text" name="link" required />
+                        <input type="text" name="link" value="<%=allActivities.link %>" required />
                     </div>
 
                     <input type="submit" class="form-button" value="Submit">

@@ -124,7 +124,8 @@ module.exports = {
             if (error) {
                 return error;
             } else {
-                response.render("pages/activities", {
+                console.log(allActivities);
+                response.render("pages/activity-update", {
                     allActivities: allActivities
                 });
             }
