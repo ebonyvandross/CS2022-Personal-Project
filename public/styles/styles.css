@@ -244,15 +244,12 @@ th {
     height: 100px;
     background: rgb(252, 252, 252);
     background: linear-gradient(100deg, rgba(252, 252, 252, 1) 0%, rgba(23, 3, 18, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    /* background-color: #228CDB; */
-    /* line-height: 25px; */
-    /* font-size: larger; */
-    /* font-weight: bolder; */
     padding: 30px;
     gap: 10px;
     color: #FCFCFC;
     margin: auto;
     font-size: large;
+    text-align: center;
 
 }
 
@@ -263,6 +260,26 @@ th {
     gap: 5px;
     margin: auto;
 
+}
+
+.footer-item-2 {
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+    /* flex-direction: row; */
+    /* margin-left: 20px; */
+
+}
+
+.footer-item ul {
+    list-style-type: none;
+
+}
+
+.footer-li {
+    list-style-type: none;
+    font-size: small;
+    /* border: #fccf14 solid 5px; */
 }
 
 /* .footer-nav-ul {
